@@ -7,7 +7,7 @@ on:
   push:
   # 每天1点、6点、7点、8点进行尝试打卡，注意要把北京时间转为UTC时间再填入下面
   schedule:
-    - cron: '0 0,17,22,23 * * *'
+    - cron: '0 0,17,22 * * *'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
