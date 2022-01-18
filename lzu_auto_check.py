@@ -29,9 +29,9 @@ def getSubmit(auToken, dailyCookie, info, FilledInfo):
         "jkm": "0", # 健康码(0为绿码)
         "sfzx": "0",  # 是否在校(0离校，1在校)
         "sfgl": "0",  # 是否隔离(0正常，1隔离)
-        "szsf": info_data['szsf'] if info_data['szsf'] else "山东省",  # 所在省份（没有打过卡或在校则为空）
-        "szds": info_data['szds'] if info_data['szds'] else "德州市",  # 所在地级市（没有打过卡或在校则为空）
-        "szxq": info_data['szxq'] if info_data['szxq'] else "临邑县",  # 所在县/区（没有打过卡或在校则为空）
+        "szsf": info_data['szsf'] if info_data['szsf'] else "甘肃省",  # 所在省份（没有打过卡或在校则为空）
+        "szds": info_data['szds'] if info_data['szds'] else "白银市",  # 所在地级市（没有打过卡或在校则为空）
+        "szxq": info_data['szxq'] if info_data['szxq'] else "会宁县",  # 所在县/区（没有打过卡或在校则为空）
         "sfcg": info_data['sfcg'] if info_data['sfcg'] else "0",  # 是否出国（没有则为否）
         "cgdd": info_data['cgdd'] if info_data['cgdd'] else "",  # 出国地点（没有则无）
         "gldd": "",  # 隔离地点
@@ -45,7 +45,7 @@ def getSubmit(auToken, dailyCookie, info, FilledInfo):
         "zcwd": "0.0", # 早晨温度(体温)
         "zwwd": "0.0", # 中午温度(体温)
         "wswd": "0.0", # 晚上温度(体温)
-        "sbr": info_data['sbr'], # 上报人
+        "sbr": "刘德明", # 上报人
         "sjd": info['data']['sjd'], # 时间段
         "initLng": "", # 初始经度/定位ip?（似乎暂未启用，后续可能会启用）
         "initLat": "", # 初始纬度/定位地址?（似乎暂未启用，后续可能会启用）
